@@ -6,6 +6,8 @@ import {
   Name,
   Tag,
   Location,
+  ActivityList,
+  Activity,
 } from './Profile.styled';
 
 export const Profile = ({ user }) => {
@@ -20,22 +22,22 @@ export const Profile = ({ user }) => {
         <Location>{location}</Location>
       </UserInfo>
 
-      <ul>
-        <li>
+      <ActivityList>
+        <Activity>
           <span>Followers</span>
           <span>{stats.followers}</span>
-        </li>
+        </Activity>
 
-        <li>
+        <Activity>
           <span>Views</span>
           <span>{stats.views}</span>
-        </li>
+        </Activity>
 
-        <li>
+        <Activity>
           <span>Likes</span>
           <span>{stats.likes}</span>
-        </li>
-      </ul>
+        </Activity>
+      </ActivityList>
     </Card>
   );
 };
