@@ -16,10 +16,10 @@ export const UserInfo = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 28px;
+  gap: ${props => props.theme.spacing(7)};
 
-  padding: 8px;
-  padding-bottom: 20px;
+  padding: ${props => props.theme.spacing(2)};
+  padding-bottom: ${props => props.theme.spacing(5)};
 `;
 
 export const UserPhoto = styled.img`
@@ -48,7 +48,7 @@ export const ActivityList = styled.ul`
   justify-content: space-between;
   gap: 8px;
 
-  padding: 8px;
+  padding: ${props => props.theme.spacing(2)};
 
   border-top: solid 1px;
   border-radius: inherit;

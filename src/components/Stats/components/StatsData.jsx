@@ -1,8 +1,16 @@
-export const StatsData = stats => {
+import PropTypes from 'prop-types';
+import { Label, Percentage } from './StatsData.styled';
+
+export const StatsData = ({ label, percentage }) => {
   return (
-    <li>
-      <span>{stats.label}</span>
-      <span>{stats.percentage}</span>
-    </li>
+    <>
+      <Label>{label}</Label>
+      <Percentage>{percentage}%</Percentage>
+    </>
   );
+};
+
+StatsData.propTypes = {
+  label: PropTypes.string,
+  percentage: PropTypes.number,
 };
