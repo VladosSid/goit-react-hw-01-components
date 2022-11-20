@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { StatsData } from './components/StatsData';
+import { StatsData } from '../StatisticItem/StatsData';
 import { Section, Title, ListData, ItemData } from './Statistics.styled';
 
 export const Statistics = ({ stats, title }) => {
   return (
     <Section>
-      <Title>{title}</Title>
+      {title.length > 0 ? <Title>{title}</Title> : null}
 
       <ListData>
         {stats.map(stat => (

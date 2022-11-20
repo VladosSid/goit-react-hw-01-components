@@ -1,4 +1,4 @@
-import { TransactionHistoryElement } from './components/TransactionHistoryElement';
+import { TransactionHistoryElement } from '../TransactionHistoryItem/TransactionHistoryElement';
 import { Table, NameData } from './TransactionHistory.styled';
 
 export const TransactionHistory = ({ transactions }) => {
